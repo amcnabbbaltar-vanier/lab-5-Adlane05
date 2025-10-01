@@ -24,8 +24,12 @@ public class PlayerAnimationManager : MonoBehaviour
       }
       if (Input.GetButtonUp("Fire2"))
       {
-        animator.SetTrigger("doPunch");
+        animator.SetTrigger("DoPunch");
       }
+  }
+  public void  PlayPunchSound()
+  {
+
   }
 
 }
