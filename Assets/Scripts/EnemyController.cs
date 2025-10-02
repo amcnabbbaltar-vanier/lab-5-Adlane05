@@ -14,5 +14,14 @@ public class EnemyController : MonoBehaviour
     public void GotHit()
     {
         animator.SetTrigger("GotHit");
+
+
+        // Notify GameManager
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.AddScore(1); // Add 1 point per hit
+        }
     }
 }
+
+
